@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ENUtils"
-  s.version      = "#{ ENV['VERSION_NUMBER'] }"
+  s.version      = "1.2.1"
   s.summary      = "A list of utilities used in ENMobileSDK echosystem"
   s.description  = <<-DESC
   This module contains many functions used by other modules to encode/decode, translate and so on.

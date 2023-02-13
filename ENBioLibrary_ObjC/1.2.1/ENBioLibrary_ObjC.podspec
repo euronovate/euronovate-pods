@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ENBioLibrary_ObjC"
-    s.version      = "#{ ENV['VERSION_NUMBER'] }"
+    s.version      = "1.2.1"
     s.summary      = "Delegate module for xml bioData generation."
     s.description  = <<-DESC
     Delegate module for xml bioData generation.
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
                 }
     s.author             = { "$(git config user.name)" => "$(git config user.email)" }
     s.source = {
-      :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENBioLibrary_ObjC/'  + "#{ ENV['VERSION_NUMBER'] }" +  '/ENBioLibrary_ObjC.zip',
+      :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENBioLibrary_ObjC/'  + "1.2.1" +  '/ENBioLibrary_ObjC.zip',
       :type => 'zip'
     }  
     s.vendored_frameworks = "XCFrameworks/ENBioLibrary_ObjC.xcframework"

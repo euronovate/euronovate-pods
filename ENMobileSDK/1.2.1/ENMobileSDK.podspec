@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ENMobileSDK"
-    s.version      = "#{ ENV['VERSION_NUMBER'] }"
+    s.version      = "1.2.1"
     s.summary      = "It's the core module."
     s.description  = <<-DESC
     This module is included in every submodule, and keeps common functions to avoid circular dependencies between them. So it's not necessary to add to every module.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
     s.platform = :ios
     s.swift_version = "5.0"
     s.ios.deployment_target  = '14.0'
-    s.dependency 'ENUtils', "#{ ENV['VERSION_NUMBER'] }"
+    s.dependency 'ENUtils', "1.2.1"
     s.dependency 'SwiftKeychainWrapper' 
     s.dependency 'ReachabilitySwift' 
     s.dependency 'AnyCodable-FlightSchool', '~> 0.6.0'

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ENPubSub"
-  s.version      = "#{ ENV['VERSION_NUMBER'] }"
+  s.version      = "1.2.1"
   s.summary      = "PubSub system communication to let sign or make other actions in realtime."
   s.description  = <<-DESC
   PubSub system communication to let sign or make other actions in realtime.
@@ -12,15 +12,15 @@ Pod::Spec.new do |s|
               }
   s.author             = { "$(git config user.name)" => "$(git config user.email)" }
   s.source = {
-    :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENPubSub/' + "#{ ENV['VERSION_NUMBER'] }" + '/ENPubSub.zip',
+    :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENPubSub/' + "1.2.1" + '/ENPubSub.zip',
     :type => 'zip'
   }
   s.vendored_frameworks = "XCFrameworks/ENPubSub.xcframework"
   s.platform = :ios
   s.swift_version = "5.0"
   s.ios.deployment_target  = '14.0'
-  s.dependency 'ENUtils', "#{ ENV['VERSION_NUMBER'] }" 
-  s.dependency 'ENMobileSDK', "#{ ENV['VERSION_NUMBER'] }"
+  s.dependency 'ENUtils', "1.2.1" 
+  s.dependency 'ENMobileSDK', "1.2.1"
   s.dependency 'AnyCodable-FlightSchool', '~> 0.6.0'
   s.dependency 'SwiftSignalRClient'
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
