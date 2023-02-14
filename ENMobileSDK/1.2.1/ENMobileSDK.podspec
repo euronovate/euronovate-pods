@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
                 }
     s.author             = { "$(git config user.name)" => "$(git config user.email)" }
     s.source = {
-      :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENMobileSDK/' +  "#{ ENV["VERSION_NUMBER"] }"  + '/ENMobileSDK.zip',
+      :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENMobileSDK/' +  "1.2.1"  + '/ENMobileSDK.zip',
       :type => 'zip'
     }
     s.vendored_frameworks = "XCFrameworks/ENMobileSDK.xcframework"
