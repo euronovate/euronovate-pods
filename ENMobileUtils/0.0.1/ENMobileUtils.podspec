@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.swift_version = "5.0"
   s.ios.deployment_target  = '14.0'
   s.dependency 'Alamofire'
-  s.dependency 'Factory'
+  s.dependency 'Factory', '2.2.0'
   s.dependency 'SwiftJWT'
   s.dependency 'ZIPFoundation', '~> 0.9'
   s.source_files  = "**/*.{m,h,swift}"
