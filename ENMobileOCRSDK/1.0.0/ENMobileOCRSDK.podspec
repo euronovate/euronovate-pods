@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target  = '14.0'
   s.dependency 'ENMobileUtils', '1.0.0'
   s.dependency 'ENMobileSDK', '1.3.3'
-  #s.dependency 'Factory', '2.2.0'
+  s.dependency 'Factory', '2.2.0'
   s.source_files  = "**/*.{m,h,swift}"
   s.resources = "**/*.{xcassets,strings,json,font}"
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
