@@ -12,18 +12,16 @@ Pod::Spec.new do |s|
               }
   s.author = { "$(git config user.name)" => "$(git config user.email)" }
   s.source = {
-    :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENMobileOCRSDK/' + "0.0.99" + '/ENMobileOCRSDK.zip',
+    :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENMobileOCRSDK/' + "1.0.2" + '/ENMobileOCRSDK.zip',
     :type => 'zip'
   }
   s.vendored_frameworks = "XCFrameworksOCR/ENMobileOCRSDK.xcframework"
   s.platform = :ios
   s.swift_version = "5.0"
   s.ios.deployment_target  = '14.0'
-  s.dependency 'ENMobileUtils', '1.0.0'
-  s.dependency 'ENMobileSDK', '1.3.3'
-  #s.dependency 'Factory', '2.2.0'
+  s.dependency 'ENMobileCoreSDK', '0.0.1'
+  s.dependency 'ENMobileSDK', '1.3.4'
+  s.dependency 'Factory', '2.2.0'
   s.source_files  = "**/*.{m,h,swift}"
   s.resources = "**/*.{xcassets,strings,json,font}"
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
