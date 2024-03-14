@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.swift_version = "5.0"
   s.ios.deployment_target  = '14.0'
-  s.dependency 'ENMobileCoreSDK', '0.0.1'
+  s.dependency 'ENMobileUtils', '1.0.2'
   s.dependency 'ENMobileSDK', '1.3.4'
   s.dependency 'Factory', '2.2.0'
   s.source_files  = "**/*.{m,h,swift}"
