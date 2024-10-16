@@ -23,6 +23,7 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire', '5.8.0'
   s.dependency 'Factory', '2.2.0'
   s.dependency 'SwiftJWT', '3.6.200'
+  s.dependency 'SwiftKeychainWrapper', '~> 4.0.1'
   s.source_files  = "**/*.{m,h,swift}"
   s.resources = "**/*.{xcassets,strings,json,font}"
 end
